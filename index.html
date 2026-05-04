@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>human-repo</title>
+</head>
+<body>
+    <div>
+        <h2>Fare la spesa seguendo una lista</h2>
+        <p>
+            lista_spesa
+            carrello
+            scaffali
+            coupon_con_scadenza
+            contanti_disponibili
+            snack_extra
+
+
+            OBIETTIVI
+            fare tutta la spesa senza dimenticare nulla
+            sfruttare il coupon
+            non superare il totale spesa rispetto ai contanti disponibili
+            ove possibile comprare snack extra 
+
+
+            1 E' UNO SCAFFALE DI CUI HO BISOGNO?
+            1.1 se si: cerco gli articoli che mi servono
+            1.2 se no: passo al prossimo e TORNO AL PUNTO 1
+
+            2 PER OGNI SCAFFALE GIUSTO
+            3 guardo gli articoli
+            3.1 SE è nella lista lo metto nel CARRELLO
+            3.2 SE è nella lista lo spunto
+            4 ALTRIMENTI passo al prossimo articolo e TORNO AL PUNTO 2
+
+            1 E' UN ARTICOLO SULLA LISTA DELLA SPESA?
+            1.1 se si: metto nel carrello
+            1.2 se no: non lo prendo
+            2. ripeto 1 e passo al prossimo articolo
+
+
+            SE è un giorno prima di fine mese (31/05/26)
+            ALLORA uso il COUPON
+            ALTRIMENTI se è oltre, non è più valido
+
+            FINCHE' non è il 31/05/26
+            ALLORA posso usare il coupon
+            ALTRIMENTI non è più valido
+
+
+            SE il totale della spesa supera i contanti_disponibili
+            1 ALLORA uso il coupon_con_scadenza 
+            1.1 SE il coupon è ancora valido lo uso
+            1.2 SE il coupon è gia stato usato passo a 2
+            2 ALTRIMENTI elimino gli snack_extra
+            3 FINCHE' non arrivo ad un totale più basso dei CONTANTI
+
+        </p>
+    </div>
+
+    <div>
+        <h2>
+            Aprire un pacchetto di figurine
+        </h2>
+        <p>
+            figurina_molto_rara
+            lista_di_figurine
+            album_di_figurine
+            mazzo_doppie
+            carte_mancanti
+
+            OBIETTIVI
+            finire l'album possibilmente con i miei pacchetti
+            usare le doppie per gli scambi con gli amici in caso non avessi finito l'album
+            trovare la carta molto rara
+
+            1APRO PACCHETTO DI FIGURINE 
+            2 PER OGNI figurina in lista_di_figurine
+            1.SE la figurina è nell'album allora è doppia :
+            ALLORA  la metto nel mazzo_doppie
+            ALTRIMENTI la attacco sull'album_di_figurine. 
+
+            1 SE non finisco l'album_di_figurine prima del weekend corrente (10/05/2026)
+            1.1 ALLORA faccio scambi con gli amici e passo al 2
+            1.2 ALTRIMENTI se è finito niente scambio
+            2 PER OGNI figurina nel mazzo_doppie la scambio con amici 
+            3 FINCHE' non mi propongono una figurina mancante su album_di_figurine o figurina_molto_rara
+            3.1 ALTRIMENTI rifiuto lo scambio
+ 
+        </p>
+    </div>
+    
+</body>
+</html>
